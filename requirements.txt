@@ -1,6 +1,7 @@
 cachetools==5.5.2
 certifi==2025.1.31
 charset-normalizer==3.4.1
+dotenv==0.9.9
 google-api-core==2.24.1
 google-auth==2.38.0
 google-cloud-speech==2.31.0
@@ -12,6 +13,7 @@ proto-plus==1.26.0
 protobuf==5.29.3
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
+python-dotenv==1.0.1
 requests==2.32.3
 rsa==4.9
 urllib3==2.3.0
