@@ -288,6 +288,22 @@ Transcript:  開啟流器
 
 不過，Google 對 USM 野心很大，目前他們已經用了 1,200 萬小時的語音檔進行自監督訓練，在一百多種語言微調了 280 億個句子，訓練出了一個 `2B` 參數的模型。其實 `2B` 其實蠻小的，要處理這麼多的語言，我覺得還是相當困難。這個 Chirp 模型雖然可以處理多種語言的語音，但在實際應用中，還是有很多問題需要解決，尤其是多語言的語音辨識部分，期待未來 Google 的語音技術可以解決這些問題，希望有一天可以不用再打字了！😄
 
+本篇文章完整的原始碼我已經放在 GitHub 上，歡迎大家參考： <https://github.com/doggy8088/vertext-ai-chirp>
+
+下載專案後的初始化命令為：
+
+```bash
+git clone https://github.com/doggy8088/vertext-ai-chirp
+cd vertext-ai-chirp
+python -m venv .venv
+pip install -r requirements.txt
+
+# Add .env file and set "GOOGLE_CLOUD_PROJECT" environment variable that point to your Google Cloud Project ID
+# Example: GOOGLE_CLOUD_PROJECT=vertex-ai-sprint
+
+python main.py
+```
+
 ### 相關連結
 
 - [Package google.cloud.speech.v2 | Cloud Speech-to-Text V2 documentation | Google Cloud](https://cloud.google.com/speech-to-text/v2/docs/reference/rpc/google.cloud.speech.v2#google.cloud.speech.v2.Speech.BatchRecognize)
